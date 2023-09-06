@@ -1,0 +1,16 @@
+#include<stdio.h>
+int product(n)
+{
+   if(n==1)
+     return 1;
+   else
+      return n*product(n-1);
+}
+int main()
+{
+   int n,a;
+   printf("\n enter the number:");
+   scanf("%d",&n);
+    a=product(n);
+    printf("\n Product =%d",a);
+}
